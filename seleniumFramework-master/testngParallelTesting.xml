@@ -8,8 +8,8 @@
 		</classes>
 	</test>
 
-	<test name="Firefox Regression Test">
-		<parameter name="browser" value="firefox" />
+	<test name="chrome-headless Regression Test">
+		<parameter name="browser" value="chrome-headless" />
 		<classes>
 			<class name="tests.MyAccountPT" />
 		</classes>

@@ -15,7 +15,7 @@ public class AddProductToCompareTest extends TestBase
 
 	// 1- Search for product number 1
 	// 2- Search for product number 2 
-	// 3- Add to compare 
+	// 3- Add to compare add-to-cart-button-4
 	// 4- Clear list
 
 	ProductDetailsPage detailsObject ; 

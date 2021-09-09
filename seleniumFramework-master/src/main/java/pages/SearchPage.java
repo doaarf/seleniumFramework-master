@@ -15,7 +15,7 @@ public class SearchPage extends PageBase
 	@FindBy(id="small-searchterms")
 	WebElement searchTextBox ; 
 
-	@FindBy(css="input.button-1.search-box-button")
+	@FindBy(css="button.button-1.search-box-button")
 	WebElement searchBtn ; 
 
 	@FindBy(id="ui-id-1")

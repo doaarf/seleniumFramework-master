@@ -11,7 +11,7 @@ public class CheckoutPage extends PageBase
 		super(driver);
 	}
 
-	@FindBy(css = "input.button-1.checkout-as-guest-button")
+	@FindBy(css = "button.button-1.checkout-as-guest-button")
 	private WebElement guestBtn;
 
 	@FindBy(id = "BillingNewAddress_FirstName")
@@ -38,25 +38,29 @@ public class CheckoutPage extends PageBase
 	@FindBy(id = "BillingNewAddress_ZipPostalCode")
 	private WebElement postCodeTxt;
 
-	@FindBy(xpath = "//*[@id=\'billing-buttons-container\']/input")
+	//@FindBy(xpath = "//*[@id=\'billing-buttons-container\']/input")
+	@FindBy(xpath = "//*[@id='billing-buttons-container']/button[4]")
 	private WebElement continueBtn;
 
 	@FindBy(id = "shippingoption_1")
 	private WebElement shippingMethodRdo;
 
-	@FindBy(xpath = "//*[@id=\'shipping-method-buttons-container\']/input")
+	@FindBy(xpath = "//*[@id=\'shipping-method-buttons-container\']/button")
+	//@FindBy(xpath = "//*[@id=\'shipping-method-buttons-container\']/input")
 	private WebElement continueShippingBtn;
-
-	@FindBy(xpath = "//*[@id=\'payment-method-buttons-container\']/input")
+	
+	//@FindBy(xpath = "//*[@id=\'payment-method-buttons-container\']/input")
+	@FindBy(xpath = "//*[@id=\'payment-method-buttons-container\']/button")
 	private WebElement continuePaymentBtn;
 
-	@FindBy(xpath = "//*[@id=\'payment-info-buttons-container\']/input")
+	//@FindBy(xpath = "//*[@id=\'payment-info-buttons-container\']/input")
+	@FindBy(xpath = "//*[@id=\'payment-info-buttons-container\']/button")
 	private WebElement continueInfoBtn;
 
 	@FindBy(css = "a.product-name")
 	public WebElement prodcutName;
 
-	@FindBy(css = "input.button-1.confirm-order-next-step-button")
+	@FindBy(css = "button.button-1.confirm-order-next-step-button")
 	private WebElement confirmBtn;
 
 	@FindBy(css = "h1")
